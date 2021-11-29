@@ -9,13 +9,13 @@
 2. Modify hyperparameters as needed
 
 ### MaskAndNoMask.py
-Contains the class MaskAndNoMask which processes the images in the data set and creates a numpy array. Also, saves the array on disk as 'ImageSet.npy'
+<p align="justify">Contains the class MaskAndNoMask which processes the images in the data set and creates a numpy array. Also, saves the array on disk as 'ImageSet.npy'</p>
 
 ### Imageset.py
-Contains the Imageset class which inherits Dataset class, and implements a custom data set which can be used to create data loaders
+<p align="justify">Contains the Imageset class which inherits Dataset class, and implements a custom data set which can be used to create data loaders</p>
 
 ### DatasetFunctions.py
-#### get_training_data:
-Enables us to fetch the training data by instantiating MaskAndNoMask class and using its methods
-#### get_stats:
-Calculates mean and standard deviation for our image dataset, later used for normalization. Also, saves it on disk as a numpy array in file
+1. get_training_data:
+<p align="justify">Enables us to fetch the training data by instantiating MaskAndNoMask class and using its methods
+2. get_stats:
+<p align="justify">Calculates mean and standard deviation for our image dataset, later used for normalization. Also, saves it on disk as a numpy array in file
