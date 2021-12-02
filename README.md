@@ -19,12 +19,12 @@ https://www.kaggle.com/zahmah/face-mask-detector-dataset</p>
 <p align="justify">This file contains the 'Imageset' class which inherits Dataset class, and implements a custom data set which will be used to create data loaders for the training and testing data.</p>
 
 ### DatasetFunctions.py
-<p align="justify">This file contains two methods:</p>
+This file contains two methods:
 1. get_training_data: Enables us to fetch the training data. Pass an argument rebuild_data = True to reprocess the images and rebuild the numpy array '\Processed Dataset\Numpy\ImageSet.npy', by instantiating 'MaskAndNoMask' class and using its method 'get_training_data'. Pass an argument rebuild_data = False to use the existing numpy array '\Processed Dataset\Numpy\ImageSet.npy' from the disk.
 2. get_stats: Calculates mean and standard deviation for the image dataset, later used for normalization. Also, saves these statistics on disk as a numpy array in file '\Processed Dataset\Numpy\DataSetStats.npy' for later use.
 
 ### ResNet.py
-<p align="justify">This file contains the implementation of the Residual CNN model. It contains:</p>
+This file contains the implementation of the Residual CNN model. It contains:
 1. conv3x3 function: It creates a convolutional layer with a 3x3 filter with the passed input channels, output channels, and stride. It maintains a fixed padding of 1.
 2. ResidualBlock class: It is the implementation of a single residual block of 2 convolutional layers, created using the function 'conv3x3'.
 3. ResNet class: It is the implementation of the final Residual CNN network. The method 'make_layer' creates the residual blocks using the class 'ResidualBlock' and also handles downsampling.
