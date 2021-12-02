@@ -8,7 +8,7 @@ https://www.kaggle.com/zahmah/face-mask-detector-dataset</p>
 
 ## Files
 ### Constants.py
-<p align="justify">This file contains all the global constants and variables used across the project implementation.</p>
+This file contains all the global constants and variables used across the project implementation.
 1. ROOT_PATH: set this constant to the complete path of the project folder.
 2. Modify hyperparameters as needed.
 
