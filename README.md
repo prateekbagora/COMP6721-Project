@@ -20,14 +20,14 @@ This file contains all the global constants and variables used across the projec
 
 ### DatasetFunctions.py
 This file contains two methods:
-1. get_training_data: Enables us to fetch the training data. Pass an argument rebuild_data = True to reprocess the images and rebuild the numpy array '\Processed Dataset\Numpy\ImageSet.npy', by instantiating 'MaskAndNoMask' class and using its method 'get_training_data'. Pass an argument rebuild_data = False to use the existing numpy array '\Processed Dataset\Numpy\ImageSet.npy' from the disk.
-2. get_stats: Calculates mean and standard deviation for the image dataset, later used for normalization. Also, saves these statistics on disk as a numpy array in file '\Processed Dataset\Numpy\DataSetStats.npy' for later use.
+1. <p align="justify">get_training_data: Enables us to fetch the training data. Pass an argument rebuild_data = True to reprocess the images and rebuild the numpy array '\Processed Dataset\Numpy\ImageSet.npy', by instantiating 'MaskAndNoMask' class and using its method 'get_training_data'. Pass an argument rebuild_data = False to use the existing numpy array '\Processed Dataset\Numpy\ImageSet.npy' from the disk.</p>
+2. <p align="justify">get_stats: Calculates mean and standard deviation for the image dataset, later used for normalization. Also, saves these statistics on disk as a numpy array in file '\Processed Dataset\Numpy\DataSetStats.npy' for later use.</p>
 
 ### ResNet.py
 This file contains the implementation of the Residual CNN model. It contains:
-1. conv3x3 function: It creates a convolutional layer with a 3x3 filter with the passed input channels, output channels, and stride. It maintains a fixed padding of 1.
-2. ResidualBlock class: It is the implementation of a single residual block of 2 convolutional layers, created using the function 'conv3x3'.
-3. ResNet class: It is the implementation of the final Residual CNN network. The method 'make_layer' creates the residual blocks using the class 'ResidualBlock' and also handles downsampling.
+1. <p align="justify">conv3x3 function: It creates a convolutional layer with a 3x3 filter with the passed input channels, output channels, and stride. It maintains a fixed padding of 1.</p>
+2. <p align="justify">ResidualBlock class: It is the implementation of a single residual block of 2 convolutional layers, created using the function 'conv3x3'.</p>
+3. <p align="justify">ResNet class: It is the implementation of the final Residual CNN network. The method 'make_layer' creates the residual blocks using the class 'ResidualBlock' and also handles downsampling.</p>
 
 ### TrainingTestingEvaluation.py:
 <p align="justify">rebuild_data: Set this variable to False to reprocess the images and regenerate the numpy array data set and data set statistics. Keep it false to use the previously generated files.</p>
@@ -49,13 +49,13 @@ This file enables the rerunning of testing phase and generates evaluation result
 Note: First you need to add the path of project folder to "ROOT_PATH" in "Constants.py" file.
 
 ### Phase 1
-1. Open the file "TrainingTestingEvaluation.py" and run it, it will load the data, execute the model and gives the results.
-2. If you want to test or use the trained model again, you have to run "RerunTestingAndEvaluation.py".
+1. <p align="justify">Open the file "TrainingTestingEvaluation.py" and run it, it will load the data, execute the model and gives the results.</p>
+2. <p align="justify">If you want to test or use the trained model again, you have to run "RerunTestingAndEvaluation.py".</p>
 
 ### Phase 2
-3. Open the "TrainingAndCrossValidation.py" and run it, it will apply the k-fold cross validation and save the evaluation of cross validation on disk as a numpy array in file
-'\Processed Dataset\Numpy\CrossValidationEvaluations.npy' for later use. Also, it saves the evaluation of testing on disk as a numpy array in file '\Processed Dataset\Numpy\FinalTestingEvaluations.npy' for later use.
-4. If you want to test or use the cross validation model again, you have to run "ComparingEvaluation.py".
+3. <p align="justify">Open the "TrainingAndCrossValidation.py" and run it, it will apply the k-fold cross validation and save the evaluation of cross validation on disk as a numpy array in file
+'\Processed Dataset\Numpy\CrossValidationEvaluations.npy' for later use. Also, it saves the evaluation of testing on disk as a numpy array in file '\Processed Dataset\Numpy\FinalTestingEvaluations.npy' for later use.</p>
+4. <p align="justify">If you want to test or use the cross validation model again, you have to run "ComparingEvaluation.py".</p>
 
 ## Dataset Main Sources:
 1. With Mask:<br>
