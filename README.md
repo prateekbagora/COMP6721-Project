@@ -56,3 +56,12 @@ Note: First you need to add the path of project folder to "ROOT_PATH" in "Consta
 3. Open the "TrainingAndCrossValidation.py" and run it, it will apply the k-fold cross validation and save the evaluation of cross validation on disk as a numpy array in file
 '\Processed Dataset\Numpy\CrossValidationEvaluations.npy' for later use. Also, it saves the evaluation of testing on disk as a numpy array in file '\Processed Dataset\Numpy\FinalTestingEvaluations.npy' for later use.
 4. If you want to test or use the cross validation model again, you have to run "ComparingEvaluation.py".
+
+## Dataset Main Sources:
+1. With Mask:
+https://github.com/cabani/MaskedFace-Net/
+2. Without Mask:
+https://www.kaggle.com/ashishjangra27/face-mask-12k-images-dataset/discussion.	
+3. Other Images:
+http://www.vision.caltech.edu/Image_Datasets/Caltech101/
+https://cocodataset.org/#home
