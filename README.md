@@ -48,19 +48,11 @@ This file enables the rerunning of testing phase and generates evaluation result
 ## Procedure to Run:
 Note: First you need to add the path of project folder to "ROOT_PATH" in "Constants.py" file.
 
-**** Phase 1 ****
- 
- 1- Open the file "TrainingTestingEvaluation.py" and run it, it will load the data, execute the model and gives the results.
+### Phase 1
+1. Open the file "TrainingTestingEvaluation.py" and run it, it will load the data, execute the model and gives the results.
+2. If you want to test or use the trained model again, you have to run "RerunTestingAndEvaluation.py".
 
- 2. If you want to test or use the trained model again, you have to run "RerunTestingAndEvaluation.py".
-
-**** end Phase 1 ****
-
-**** Phase 2 ****
-
-3. open the "TrainingAndCrossValidation.py" and run it, it will apply the k-fold cross validation and save the evaluation of cross validation on disk as a numpy array in file '\Processed Dataset\Numpy\CrossValidationEvaluations.npy' for later use. Also, it saves the evaluation of testing on disk as a numpy array in file '\Processed Dataset\Numpy\FinalTestingEvaluations.npy' for later use.
-
-4.  If you want to test or use the cross validation model again, you have to run "ComparingEvaluation.py".
-
-
-**** end Phase 2 ****
+### Phase 2
+3. Open the "TrainingAndCrossValidation.py" and run it, it will apply the k-fold cross validation and save the evaluation of cross validation on disk as a numpy array in file
+'\Processed Dataset\Numpy\CrossValidationEvaluations.npy' for later use. Also, it saves the evaluation of testing on disk as a numpy array in file '\Processed Dataset\Numpy\FinalTestingEvaluations.npy' for later use.
+4. If you want to test or use the cross validation model again, you have to run "ComparingEvaluation.py".
