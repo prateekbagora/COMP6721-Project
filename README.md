@@ -59,9 +59,9 @@ Note: First you need to add the path of project folder to "ROOT_PATH" in "Consta
 
 ## Dataset Main Sources:
 1. With Mask:
-  * https://github.com/cabani/MaskedFace-Net/
+  - https://github.com/cabani/MaskedFace-Net/
 2. Without Mask:
-  * https://www.kaggle.com/ashishjangra27/face-mask-12k-images-dataset/discussion.	
+  - https://www.kaggle.com/ashishjangra27/face-mask-12k-images-dataset/discussion.	
 3. Other Images:
-  * http://www.vision.caltech.edu/Image_Datasets/Caltech101/
-  * https://cocodataset.org/#home
+  - http://www.vision.caltech.edu/Image_Datasets/Caltech101/
+  - https://cocodataset.org/#home
