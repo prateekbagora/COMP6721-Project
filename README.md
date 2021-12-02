@@ -53,8 +53,7 @@ Note: First you need to add the path of project folder to "ROOT_PATH" in "Consta
 2. <p align="justify">If you want to test or use the trained model again, you have to run "RerunTestingAndEvaluation.py".</p>
 
 ### Phase 2
-3. <p align="justify">Open the "TrainingAndCrossValidation.py" and run it, it will apply the k-fold cross validation and save the evaluation of cross validation on disk as a numpy array in file
-'\Processed Dataset\Numpy\CrossValidationEvaluations.npy' for later use. Also, it saves the evaluation of testing on disk as a numpy array in file '\Processed Dataset\Numpy\FinalTestingEvaluations.npy' for later use.</p>
+3. <p align="justify">Open the "TrainingAndCrossValidation.py" and run it, it will apply the k-fold cross validation and save the evaluation of cross validation on disk as a numpy array in file '\Processed Dataset\Numpy\CrossValidationEvaluations.npy' for later use. Also, it saves the evaluation of testing on disk as a numpy array in file '\Processed Dataset\Numpy\FinalTestingEvaluations.npy' for later use.</p>
 4. <p align="justify">If you want to test or use the cross validation model again, you have to run "ComparingEvaluation.py".</p>
 
 ## Dataset Main Sources:
