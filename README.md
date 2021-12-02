@@ -1,5 +1,4 @@
-<p align="justify">The whole dataset which has been gathered for the three classes is in the following repository:<br>
-If you want to test the model on whole dataset you can download the dataset from the kaggle link given below, and store it into the Dataset folder of project.<br>
+<p align="justify">Please download the dataset from the kaggle link given below and store it into the Dataset folder of the project.<br>
 https://www.kaggle.com/zahmah/face-mask-detector-dataset</p>
 
 ## Organization of the Data Set
