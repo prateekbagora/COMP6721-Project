@@ -58,16 +58,12 @@ Note: First you need to add the path of project folder to "ROOT_PATH" in "Consta
 4. If you want to test or use the cross validation model again, you have to run "ComparingEvaluation.py".
 
 ## Dataset Main Sources:
-1. With Mask:
-
+1. With Mask:<br>
    https://github.com/cabani/MaskedFace-Net/
 
-3. Without Mask:
-
+3. Without Mask:<br>
    https://www.kaggle.com/ashishjangra27/face-mask-12k-images-dataset/discussion.
 
-4. Other Images:
-
-   http://www.vision.caltech.edu/Image_Datasets/Caltech101/
-
+4. Other Images:<br>
+   http://www.vision.caltech.edu/Image_Datasets/Caltech101/<br>
    https://cocodataset.org/#home
