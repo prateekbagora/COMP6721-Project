@@ -11,7 +11,7 @@ from torch.utils.data.dataloader import DataLoader
 #               used for first execution and later in case of new additions to dataset
 #           set 'rebuild_data' to False to retrieve the dataset from the disk
 # returns the image dataset as a numpy array
-def get_training_data(rebuild_data = False):
+def get_training_data(rebuild_data):
     if rebuild_data:
         
         # path to raw dataset
@@ -25,12 +25,13 @@ def get_training_data(rebuild_data = False):
         #           Without Mask 1 (folder consisting of images)
         #           Without Mask 2 (folder consisting of images)
         #           and so on ...
-        imageset_path = Path(Constants.ROOT_PATH + r'\Dataset')
+        imageset_path = Path(Constants.ROOT_PATH + r'/Dataset')
         
         # path to processed dataset
-        destination_path = Path(Constants.ROOT_PATH + r'\Processed Dataset')
+        destination_path = Path(Constants.ROOT_PATH + r'/Processed Dataset')
         mask_path = imageset_path/'With Mask'
         no_mask_path = imageset_path/'Without Mask'
+        Other_images_path = imageset_path/'Other Images'
         
         if not os.path.exists(imageset_path):
             raise Exception("The images' source path '{}' doesn't exist".format(imageset_path))
@@ -40,14 +41,15 @@ def get_training_data(rebuild_data = False):
         # directories and the corresponding label
         # 0: Without Mask
         # 1: With Mask
-        imageset_dirs = [[mask_path, 1], [no_mask_path, 0]]
+        # 2: Other Images
+        imageset_dirs = [ [no_mask_path, 0], [mask_path, 1], [Other_images_path, 2]]
         
         mask_nomask = MaskAndNoMask.MaskAndNoMask(imageset_dirs)
         training_data, _ = mask_nomask.get_training_data()
         
     else:
         try:
-            training_data = np.load(Constants.ROOT_PATH + r'\Processed Dataset\Numpy\ImageSet.npy', allow_pickle=True)
+            training_data = np.load(Constants.ROOT_PATH + r'/Processed Dataset/Numpy/ImageSet.npy', allow_pickle=True)
         except:
             raise Exception("The numpy array's path '{}' doesn't exist".format(destination_path))
     return training_data
@@ -80,6 +82,6 @@ def get_stats(image_array_path):
     std /= total_samples
     
     # storing calculated mean and standard deviation in DataSetStats.npy file as a numpy array
-    np.save(Constants.ROOT_PATH + r'\Processed Dataset\Numpy\DataSetStats.npy', [mean.numpy(), std.numpy()])
+    np.save(Constants.ROOT_PATH + r'/Processed Dataset/Numpy/DataSetStats.npy', [mean.numpy(), std.numpy()])
     
     return mean, std

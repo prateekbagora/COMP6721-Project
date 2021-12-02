@@ -40,7 +40,7 @@ class ResNet(nn.Module):
 
     # blocks will be a list that defines the number of sequential residual blocks in a particular layer
     # for example: [2, 2, 2]
-    def __init__(self, block_type, blocks, classes = 2):
+    def __init__(self, block_type, blocks, classes = 3):
         super(ResNet, self).__init__()
         self.in_channels = 16
         self.conv = conv3x3(3, 16)

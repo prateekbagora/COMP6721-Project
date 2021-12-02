@@ -1,5 +1,7 @@
+import torch
+
 # set this to the location of the project folder
-ROOT_PATH = r'C:\Users\91913\OneDrive\Desktop\AI Project\Program Modules'
+ROOT_PATH = r'.'
 
 # set this to the image size you need
 # all images will be resized to this during preprocessing
@@ -13,3 +15,6 @@ BATCH_SIZE = 20
 TRAIN_TEST_RATIO = 0.2
 DECAY_FACTOR = 0.5
 DECAY_EPOCH_FREQUENCY = 10
+DEVICE_CUDA = torch.device('cuda')
+DEVICE_CPU = torch.device('cpu')
+N_SPLITS = 10
